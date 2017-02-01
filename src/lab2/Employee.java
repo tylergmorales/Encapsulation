@@ -111,6 +111,11 @@ public class Employee {
     // allowed through validation.
     
     public void setFirstName(String firstName) {
+        if(firstName == null || firstName.length() < 2)
+        {
+            System.out.println("Please enter a valid first name.");
+            return;
+        }
        this.firstName = firstName;
     }
 
@@ -119,6 +124,11 @@ public class Employee {
     }
 
     public void setLastName(String lastName) {
+       if(lastName == null || lastName.length() < 2)
+       {
+            System.out.println("Please enter a valid last name.");
+            return;
+       }
        this.lastName = lastName;
     }
 
@@ -127,6 +137,11 @@ public class Employee {
     }
 
     public void setSsn(String ssn) {
+        if(ssn.length() < 9)
+        {
+            System.out.println("Please enter valid SSN.");
+            return;
+        }
         this.ssn = ssn;
     }
 
