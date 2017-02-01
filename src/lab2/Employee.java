@@ -65,10 +65,9 @@ public class Employee {
     // would only do this once, upon being hired.:
     private void meetDepartmentStaff() {
         metDeptStaff = true;
-        simpleDateFormat();
-        String fmtDate = fmtDate();        
+        simpleDateFormat();        
         System.out.println(firstName + " " + lastName + " met with Dept. Staff on "
-            + fmtDate);
+            + fmtDate());
     }
 
     // Assume this must be performed third. And assume that because department
@@ -76,10 +75,9 @@ public class Employee {
     // independently from other classes.
     public void reviewDeptPolicies() {
         reviewedDeptPolicies = true;
-        simpleDateFormat();
-        String fmtDate = fmtDate();        
+        simpleDateFormat();       
         System.out.println(firstName + " " + lastName + " reviewed Dept policies on "
-            + fmtDate);
+            + fmtDate());
     }
 
     // Assume this must be performed 4th. And assume that because employees
@@ -88,10 +86,9 @@ public class Employee {
     public void moveIntoCubicle(String cube) {
         this.cubeId = cube;
         this.movedIn = true;
-        simpleDateFormat();
-        String fmtDate = fmtDate();        
+        simpleDateFormat();       
         System.out.println(firstName + " " + lastName + " moved into cubicle "
-                + cubeId + " on " + fmtDate);
+                + cubeId + " on " + fmtDate());
     }
     
     private void simpleDateFormat(){
